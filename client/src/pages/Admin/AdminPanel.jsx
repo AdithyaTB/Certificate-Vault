@@ -26,7 +26,7 @@ import {
 } from '../../app/adminApiSlice';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
-const API = 'http://localhost:5000/api/admin';
+const API = 'https://certificate-vault-backend-adhi.onrender.com/api/admin';
 const adminToken = () => localStorage.getItem('adminToken');
 
 const formatBytes = (b, d = 1) => {

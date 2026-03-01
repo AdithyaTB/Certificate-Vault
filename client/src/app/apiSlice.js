@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const apiSlice = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5000/api',
+        baseUrl: 'https://certificate-vault-backend-adhi.onrender.com/api',
         prepareHeaders: (headers, { getState }) => {
             // By default, if we have a token in the store (or localStorage), let's use that for authenticated requests
             const token = localStorage.getItem('token');
